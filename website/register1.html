@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color:rgb(55, 39, 39);
+    }
+
+    .container {
+        max-width: 400px;
+        margin: 20px auto;
+        background:peru;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        font-weight: bold;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .form-group input[type="submit"] {
+        background: #007bff;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .form-group input[type="submit"]:hover {
+        background: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1> USER REGISTRATION FORM</h>
+    <form action="register1.php" method="post">
+        <div class="form-group">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="fname" required>
+        </div>
+        <div class="form-group">
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lname" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="telephone">Telephone:</label>
+            <input type="tel" id="telephone" name="telephone" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
